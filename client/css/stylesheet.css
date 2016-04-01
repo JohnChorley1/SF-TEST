@@ -1,0 +1,873 @@
+/* CSS Document  */
+
+@font-face {
+    font-family: futura;
+    src: url("../fonts/Futura-Book.ttf");
+}
+
+@font-face {
+    font-family: futura italic;
+    src: url("../fonts/Futura_ICG_Book_Oblique.ttf");
+    font-style: italic;
+}
+
+table{
+	border-collapse:collapse;
+}
+
+.Line td{
+    border-bottom: 1px solid #6e6e9a;
+}
+
+
+/*--------------------------------ALL PAGES----------------------------------------*/
+
+/*Body Style*/
+
+* {
+    font-family: futura, verdana;
+    box-sizing: border-box;
+}
+h1{
+	font-family: futura, verdana;
+	text-align:center;
+	font-size: 24px;
+}
+p{
+	font-size:14px;
+}
+th {
+	font-size:16px;
+}
+td {
+	font-size:14px;
+}
+body {
+    margin: auto;
+    min-width: 600px;
+}
+
+/*NAVIGATION STYLE*/
+
+nav {
+    list-style-type: none;
+    padding: 0px;
+    overflow: hidden;
+    background-color: #4a486d;
+	text-align:center;
+}
+
+.navcontainer {
+	width: 100%;
+	background-color: #4a486d;
+}
+
+#search {
+    width: 20px;
+    height: 15px;
+    padding-right: 6px;
+}
+nav a {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+nav a:hover {
+    background-color: #1c1c1c;
+    text-decoration: none;
+    color: white;
+}
+nav a:visited {
+    background-color: #1c1c1c;
+    text-decoration: none;
+    color: white;
+}
+
+/*JUMBOTRON STYLE*/
+
+.jumbotron {
+    text-align: center;
+    border-radius: 25px;
+    background-color: white;
+    padding: 0px;
+    margin: 0 auto;
+	margin-bottom:30px;
+	margin-top:30px;
+    clear: both;
+}
+
+#logo{
+	width:240px;
+	height:140px;
+}
+
+/*CONTAINER STYLE */
+
+.container {
+    text-align: center;
+    padding: 2%;
+    clear: both;
+    width: 100%;
+    margin: 0 auto;
+}
+
+/*BACKGROUND COLOR*/
+
+#backcol {
+    height: 100%;
+}
+
+/*LEFT LINKS STYLING*/
+
+#sidenav {
+    list-style-type: none;
+    margin: 0;
+    padding: 5px;
+    padding-left:10px;
+    width: 16%;
+    background-color: #f5f4f9;
+    position: absolute;
+    height: 55%;
+    overflow: auto;
+    clear: both;
+    text-align: left;
+    float: left;
+	border-radius: 3px;
+}
+li a {
+    display: block;
+    color: #1c1c1c;
+    padding: 8px 0 0px 25px;
+    text-decoration: none;
+    padding:8px;
+}
+li a.active {
+    text-decoration: none;
+    font-weight: bold;
+}
+li a:hover:not(.active) {
+    background-color:  #1c1c1c;
+    color: white;
+    text-decoration: none;
+}
+
+#leftNavPadding{
+    padding:10px;
+}
+#searchbar{
+    height:15px;
+    width:15px;
+    margin:1px;
+}
+#quick {
+    border-radius: 2px;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    clear: both;
+    float: left;
+}
+
+/*PIC STYLING*/
+
+#pic{
+  width:50%;
+  stroke:#8e8db7;
+  stroke-width:4;
+  margin: auto;
+}
+
+#pic2{
+  width:30%;
+  stroke:#8e8db7;
+  stroke-width:4;
+  margin: auto;
+  padding-top: 45px;
+  padding-bottom: 57px;
+}
+
+/*BUTTON STYLE*/
+
+button {
+    background-color: #6e6e9a;
+    border: none;
+    color: white;
+    padding: 5px 15px;
+    text-align: center;
+    display: inline-block;
+    font-size: 18px;
+    cursor: pointer;
+    border-radius: 2px;
+    margin:4px;
+}
+button:hover {
+    background-color: #1c1c1c;
+}
+
+.vpButton{
+	padding-top: 0px;
+}
+
+.profilesButton{
+	margin-top:0px;
+}
+
+/*FORM STYLE*/
+
+form {
+    text-align: center;
+    padding-top: 60px;
+}
+
+label.formLabel {
+    display: block;
+	margin:10px;
+	padding:10px;
+	margin: 0 auto;
+    width: 300px;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+#fieldset{
+    margin-top:-30px;
+    border: none;
+}
+#legend{
+    color:#515078;
+    font-size:18px;
+}
+#fieldsetBorder{
+    border: none;
+}
+#fieldsetBorder2{
+    border: none;
+}
+#legendLeft{
+    text-align:left;
+}
+.astrex{
+    color:red;
+}
+
+.trcolor{
+    background-color:#8a87a2;
+}
+
+/*FOOTER*/
+
+footer {
+    background-color: #b1b2d2;
+    color: #1c1c1c;
+    text-align: center;
+	height:70px;
+	clear:both;
+	margin-top:10px;
+}
+footer p {
+    margin-right: 140px;
+}
+
+#footlogo {
+    float: left;
+    margin-left: 0px;
+    height: 70px;
+    width: 190px;
+}
+
+/*SOCIAL MEDIA BUTTONS IN FOOTER*/
+.socialMediaButtons {
+    float:right;
+	margin: 1%;
+	padding-top: 9px;
+}
+
+.socialMediaButtons :hover {
+	background-color:#1c1c1c;
+}
+
+/*CONTAINER STYLE*/
+
+#containerWidth {
+    width:960px;
+    background-color: #716f9a;
+}
+
+/*PROFILE PAGE STYLE*/
+
+#title {
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    text-align: center;
+}
+#title2 {
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    text-align: center;
+}
+#title3 {
+    color: white;
+    font-weight: bold;
+    font-size: 16px;
+    margin-top: 20%;
+    text-align: left;
+    padding-left: 20px;
+}
+
+#title4 {
+    color: white;
+    font-weight: bold;
+    font-size: 16px;
+    padding-top: 25px;
+    text-align: left;
+    padding-left: 20px;
+}
+
+#text {
+    color: white;
+    font-size: 14px;
+    text-align: left;
+    padding-left: 20px;
+}
+
+.topPad{
+	padding-top: 40px;
+}
+
+.bottomMargin{
+	margin-bottom: 800px;
+}
+
+.Line td{
+    border-bottom: 1px solid #6e6e9a;
+}
+
+
+#enquiryType, #travel, #personalMessage, #optionalMessage{
+	padding: 3px;
+    margin: 10px;
+}
+
+#spaceBottom{
+	margin-bottom:20px;
+}
+/*---------------------------------------------------------------------*/
+
+
+
+
+
+/*--------------------------------INDEX PAGE----------------------------------------*/
+
+
+#arrow{
+   float:left;
+   padding:10px;
+   padding-bottom:30px;
+   top:30px;
+   margin:10px;
+   position:relative;
+
+}
+
+#introheading {
+  font-family: futura bold;
+  color: white;
+  font-size: 50px;
+  padding-top:10px;
+  padding-right:25px;
+}
+
+#introtext {
+ padding: 20px 20px 0px 20px;
+margin:20px;
+font-family: Futura,sans-serif;
+font-size: 14px;
+color: white;
+text-align: justify;
+line-height: 1.5em;
+}
+
+#hexImages{
+  float:left;
+  margin:10px;
+  position:relative;
+  display:block;
+
+}
+
+
+/*----------------STYLING FOR THE HEX IMAGES ARE NO LONGER NEEDED----------------------*/
+
+
+/*.hexStyle_1{
+	display:block;
+    height:20%;
+    width:25%;
+    padding-bottom:50px;
+	clear:both;
+	margin-right: 10px;
+	float:left;
+}
+
+.hexStyle_2{
+	display:block;
+    height:20%;
+    width:25%;
+    padding-bottom:50px;
+	clear:both;
+	margin-left:10%;
+}
+
+.hexStyle_3{
+	display:block;
+    height:20%;
+    width:25%;
+    padding-bottom:50px;
+	clear:both;
+	margin-left:10%;
+}
+*/
+/*---------------------------------------------------------------------*/
+
+#back{
+	padding-top:20px;
+	padding-bottom:150px;
+	margin-bottom:0px;
+}
+#col{
+	background-color:#555b8f;
+}
+
+
+
+/*---------------------------------------------------------------------*/
+
+
+
+
+
+
+/*--------------------------------LOGIN PAGE START----------------------------------------*/
+#divContainer2 {
+    height: 550px;
+    width: 550px;
+    margin: 0 auto;
+    position: relative;
+}
+
+#introDiv {
+    height: 550px;
+    width: 550px;
+    margin: 0 auto;
+    position: absolute;
+    text-align: center;
+    padding-top: 120px;
+    background-image: url(../img/login.jpg);
+    background-repeat: no-repeat;
+    background-size: 550px 550px;
+}
+
+/*BUTTON STYLING*/
+
+.buttonlayout {
+    width: 150px;
+    height: 60px;
+    padding: 3.5px 5px;
+    font-size: 18px;
+    font-family: futura;
+    margin: 10px auto;
+}
+
+#guestButton {
+    margin-top: -1px;
+	padding: -3.5px -3px;
+}
+
+.displayBlock{
+	display: block;
+	width: 150px;
+    height: 60px;
+    padding: 3.5px 3px;
+	margin: 0 auto;
+	margin-bottom:20px;
+    font-size: 18px;
+    font-family: futura;
+}
+
+
+#logInDiv {
+    height: 550px;
+    width: 550px;
+    margin: 0 auto;
+    position: absolute;
+    padding-top: 80px;
+    background-image: url(../img/login.jpg);
+    background-repeat: no-repeat;
+    background-size: 550px 550px;
+}
+#logInForm {
+    margin: 0 auto;
+    width: 350px;
+}
+input.form {
+    font-family: futura italic;
+    padding: 3px;
+    margin: 10px;
+    border-radius: 2px;
+    border: 1px solid #1c1c1c;
+    height: 30px;
+    font-size: 14px;
+    width: 200px;
+    text-align: center;
+    color: #6e6e9a ;
+}
+#registerDiv {
+    height: 550px;
+    width: 550px;
+    margin: 0 auto;
+    position: absolute;
+    text-align: center;
+    background-image: url(../img/login.jpg);
+    background-repeat: no-repeat;
+    background-size: 550px 550px;
+}
+#registerForm {
+    text-align: center;
+    margin-top: 80px;
+}
+
+/*--------------------------------LOGIN PAGE FINISH----------------------------------------*/
+
+
+
+
+
+/*--------------------------------MY PROFILE----------------------------------------*/
+
+/* hide nav button */
+
+#hide{
+	float:left;
+    left:0px;
+	top:0px;
+	margin:5px;
+}
+
+.clear{
+ clear:both;
+}
+
+/*HEXAGON PROFILE IMAGE STYLING*/
+
+svg {
+    width: 19%;
+    stroke: #8e8db7;
+    stroke-width: 4;
+}
+
+#profileInfo {
+    width: 90%;
+    height: 750px;
+    background-color: #6a6cae;
+    margin: 0 auto;
+    z-index: 3;
+    position: relative;
+    border-radius: 2px;
+    overflow: hidden;
+    padding: 10px;
+}
+
+.profileback{
+	text-align: center;
+    padding: 2%;
+    clear: both;
+    width: 100%;
+    margin: 0 auto;
+    background-image: url(../img/back.jpg);
+    background-repeat: no-repeat;
+}
+
+
+
+.custom-file-upload {
+    padding: 6px 12px;
+    cursor: pointer;
+	background-color: none;
+	position: absolute;
+	right:70px;
+	width: 54px;
+}
+
+#marginBottom{
+	margin-bottom:50px;
+}
+/*---------------------------------------------------------------------*/
+
+
+
+
+
+/*--------------------------------POD SEARCH PAGE START---------------------------------------*/
+
+#basictxt {
+    text-align: left;
+    padding: 11px;
+    padding-bottom: 24px;
+    margin: 5px;
+}
+#quote {
+    text-align: left;
+    color: #4a486d;
+    font-size: 16px;
+    padding: 10px;
+    padding-top: 65px;
+}
+.hireButton{
+    padding-top: 5px;
+	width:70px;
+	padding:5px;
+}
+#hireSize{
+	width:70px;
+	height:70px;
+}
+/*--------------------------------POD SEARCH PAGE FINISH---------------------------------------*/
+
+
+
+
+
+/*--------------------------------POD PROFILE PAGE START----------------------------------------*/
+#backButton{
+    float:left;
+}
+
+
+#nextButton{
+    float:right;
+}
+
+#enquire {
+    width: 150px;
+    height: 50px;
+	margin:0px;
+	margin-top:-10px;
+	margin-bottom: 50px;
+}
+#divContainer {
+    width: 700px;
+    height: 700px;
+    margin: 0 auto;
+    margin-bottom: 5%;
+}
+#skills {
+    width: 430px;
+    height: 750px;
+    background-color: #6e6e9a;
+    margin: 0 auto;
+    z-index: 2;
+    border-radius: 2px;
+    overflow: hidden;
+}
+#skilllist {
+    color: white;
+    font-weight: bold;
+    font-size: 16px;
+    margin-top: 20%;
+    text-align: left;
+    padding-left: 20px;
+    list-style-type: none;
+}
+#bio {
+    width: 430px;
+    height: 750px;
+    background-color: #8a83d1;
+    margin: 0 auto;
+    z-index: 3;
+    border-radius: 2px;
+    overflow: hidden;
+}
+#workHistory {
+    width: 430px;
+    height: 750px;
+    background-color: #6a6cae;
+    margin: 0 auto;
+    z-index: 1;
+    border-radius: 2px;
+    overflow: hidden;
+	text-align: center;
+}
+
+
+
+#portfolioContainer {
+    width: 100%;
+    background-color: #4a486d;
+    border-top: 10px solid black;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+#portfolio {
+    min-width: 200px;
+    max-width: 950px;
+    border: solid 1px black;
+    margin: 0 auto;
+    padding: 10px;
+    background-color: #8a83d1;
+    text-align: center;
+    color: white;
+}
+#portfolio-upload-placeholder-div {
+    background-image: url('../images/crossBlack.png');
+    background-size:cover;
+    background-position: center;
+    height: 260px; width: 260px;
+    margin: 5.9px;
+    border: 1px solid #bbb;
+    float:left;
+}
+#portfolio-upload-divs{
+    background-image:url('');
+    background-size:cover;
+    background-position: center;
+    background-color: white;
+    height: 260px; width: 260px;
+    margin: 5.9px;
+    border: 1px solid #bbb;
+    float:left;
+}
+#portfolio-upload-work-divs {
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+    padding: 5px;
+    padding-bottom: 16px;
+    margin: 50px;
+    min-width: 150px;
+    max-width: 900px;
+}
+
+#fileUpload{
+    margin-bottom: 20px;
+}
+#clearBoth {
+    clear:both;
+}
+
+/*--------------------------------POD PROFILE PAGE FINISH---------------------------------------*/
+
+
+
+
+
+/*--------------------------------BOOK NOW PAGE START----------------------------------------*/
+
+
+label {
+    display: inline-block;
+    width: 220px;
+    font-size: 16px;
+    font-weight: bold;
+}
+input.form1 {
+    font-family: futura italic;
+    padding: 3px;
+    margin: 10px;
+    border-radius: 3px;
+    border: 1px solid #1c1c1c;
+    height: 30px;
+    font-size: 12px;
+    width: 200px;
+    text-align: center;
+    color: #6e6e9a ;
+}
+
+#booknowFieldset{
+    border: none;
+}
+
+/*--------------------------------BOOK NOW PAGE FINISH----------------------------------------*/
+
+
+
+
+
+/*--------------------------------CURRENT BOKINGS PAGE START---------------------------------------*/
+
+#currentBookingTable, .bookingtr, .bookingtd {
+	text-align:center;
+	margin: 10px;
+}
+.bookingtd {
+	max-width: 400px;
+	min-width: 50px;
+}
+
+/*--------------------------------CURRENT BOKINGS PAGE FINISH---------------------------------------*/
+
+
+
+
+
+/*--------------------------------HISTORIC BOOKING----------------------------------------*/
+
+#Table, th, td {
+	margin: 10px;
+	padding:10px;
+}
+
+/*TABLE STYLING*/
+
+table, th, td {
+	text-align:center;
+	margin: 10px;
+	margin-left:20%;
+}
+
+td {
+	max-width: 300px;
+	min-width: 100px;
+	min-height: 300%;
+	margin: 10px;
+	background-color:white;
+}
+
+th {
+	padding:10px;
+	color: white;
+}
+
+/*---------------------------------------------------------------------*/
+
+
+
+
+
+/*--------------------------------CONTACT US----------------------------------------*/
+
+input.inputstyle {
+    font-family: futura italic;
+    padding: 3px;
+    margin: 10px;
+    border-radius: 2px;
+    border: 1px solid #1c1c1c;
+    height: 30px;
+    font-size: 14px;
+    width: 200px;
+    text-align: center;
+    color: #6e6e9a ;
+}
+
+#color{
+    background-color: white;
+}
+
+#white{
+    color:white;
+}
+
+/*---------------------------------------------------------------------*/
