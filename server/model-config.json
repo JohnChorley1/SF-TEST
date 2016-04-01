@@ -69,17 +69,9 @@
     "dataSource": "mongoDs",
     "public": true
   },
-  "SuperAdmin": {
-    "dataSource": "mongoDs",
-    "public": true
-  },
   "podMember": {
     "dataSource": "mongoUserDs",
     "public": false
-  },
-  "Time": {
-    "dataSource": "db",
-    "public": true
   },
   "UserIdentity": {
     "dataSource": "mongoUserDs",
