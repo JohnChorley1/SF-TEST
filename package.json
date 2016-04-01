@@ -52,7 +52,7 @@
     "url": ""
   },
   "engines": {
-    "node": "0.10.x"
+    "node": "0.12.x"
   },
   "license": "UNLICENSED",
   "description": "sharpfuturespod"
