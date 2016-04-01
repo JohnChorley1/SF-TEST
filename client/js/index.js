@@ -7,7 +7,7 @@ var Content = React.createClass({
       <div className="row row-offcanvas row-offcanvas-right" >
   	<div className="col-xs-12" >
   	<div className="row">
-  	<div className="col-xs-12"><h1 id="introheading"> Hello!<br/>Welcome to POD</h1>
+  	<div className="col-xs-12 col-lg-12"><h1 id="introheading"> Hello!<br/>Welcome to POD</h1>
 
     <div className="row">
     <div className="col-xs-12 col-lg-12">
