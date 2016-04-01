@@ -69,10 +69,6 @@
     "dataSource": "mongoDs",
     "public": true
   },
-  "podMember": {
-    "dataSource": "mongoUserDs",
-    "public": false
-  },
   "UserIdentity": {
     "dataSource": "mongoUserDs",
     "public": true
