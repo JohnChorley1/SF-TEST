@@ -4,7 +4,8 @@
       "loopback/common/models",
       "loopback/server/models",
       "../common/models",
-      "./models"
+      "./models",
+      "./node_modules/loopback-component-passport/lib/models"
     ],
     "mixins": [
       "loopback/common/mixins",
@@ -14,7 +15,8 @@
     ]
   },
   "User": {
-    "dataSource": "db"
+    "dataSource": "mongoUserDs",
+    "public": true
   },
   "AccessToken": {
     "dataSource": "db",
@@ -31,5 +33,64 @@
   "Role": {
     "dataSource": "db",
     "public": false
+  },
+  "Email": {
+    "dataSource": "emailDs"
+  },
+  "PodUser": {
+    "dataSource": "mongoUserDs",
+    "public": true
+  },
+  "Review": {
+    "dataSource": "mongoDs",
+    "public": true
+  },
+  "profile": {
+    "dataSource": "mongoProfileDs",
+    "public": true
+  },
+  "Reviewer": {
+    "dataSource": "mongoUserDs",
+    "public": true
+  },
+  "user": {
+    "dataSource": "mongoUserDs",
+    "public": true
+  },
+  "Client": {
+    "dataSource": "mongoDs",
+    "public": true
+  },
+  "Contact": {
+    "dataSource": "mongoDs",
+    "public": true
+  },
+  "Testimonial": {
+    "dataSource": "mongoDs",
+    "public": true
+  },
+  "SuperAdmin": {
+    "dataSource": "mongoDs",
+    "public": true
+  },
+  "podMember": {
+    "dataSource": "mongoUserDs",
+    "public": false
+  },
+  "Time": {
+    "dataSource": "db",
+    "public": true
+  },
+  "UserIdentity": {
+    "dataSource": "mongoUserDs",
+    "public": true
+  },
+  "UserCredential": {
+    "dataSource": "mongoUserDs",
+    "public": true
+  },
+  "ApplicationCredential": {
+    "dataSource": "mongoUserDs",
+    "public": true
   }
 }
