@@ -1,0 +1,176 @@
+{
+	"name": "profile",
+	"plural": "Profile",
+	"base": "PersistedModel",
+	"idInjection": true,
+	"properties": {
+		"name": {
+			"type": "string"
+		},
+		"email": {
+			"type": "string"
+		},
+		"imgUrl": {
+			"type": "string"
+		},
+		"desc": {
+			"type": "string"
+		},
+		"workHistory": {
+			"companyName": {
+				"type": "string"
+			},
+			"jobTitle": {
+				"type": "string"
+			},
+			"timeWorked": {
+				"type": "string"
+			}
+		},
+		"rating": {
+			"podId": {
+				"type": "string"
+			},
+			"clientId": {
+				"type": "string"
+			}
+		},
+		"podHistory": {
+			"jobCounter": {
+				"type": "number"
+			},
+			"hoursCounter": {
+				"type": "number",
+				"type": "string"
+			}
+		},
+		"preferences": {
+			"distanceWillingToTravel": {
+				"type": "string"
+			},
+			"preferredTimes": {
+				"type": "string"
+			},
+			"preferredDays": {
+				"type": "string"
+			}
+		},
+		"ownerId": {
+			"type": "string"
+		}
+	},
+	"validations": [],
+	"relations": {
+		"user": {
+			"type": "belongsTo",
+			"model": "user",
+			"foreignKey": "ownerId"
+		},
+		"PodUser": {
+			"type": "belongsTo",
+			"model": "PodUser",
+			"foreignKey": "ownerId"
+		},
+		"Client": {
+			"type": "belongsTo",
+			"model": "Client",
+			"foreignKey": "ClientId"
+		}
+	},
+	"acls": [{
+		"accessType": "*",
+		"principalType": "ROLE",
+		"principalId": "$everyone",
+		"permission": "DENY"
+	}, {
+		"accessType": "READ",
+		"principalType": "ROLE",
+		"principalId": "admin",
+		"permission": "ALLOW",
+		"property": "create"
+	}, {
+		"accessType": "READ",
+		"principalType": "ROLE",
+		"principalId": "admin",
+		"permission": "ALLOW",
+		"property": "listProfiles"
+	}, {
+		"accessType": "READ",
+		"principalType": "ROLE",
+		"principalId": "admin",
+		"permission": "ALLOW",
+		"property": "find"
+	}, {
+		"accessType": "READ",
+		"principalType": "ROLE",
+		"principalId": "admin",
+		"permission": "ALLOW",
+		"property": "findById"
+	}, {
+		"accessType": "WRITE",
+		"principalType": "ROLE",
+		"principalId": "admin",
+		"permission": "ALLOW",
+		"property": "create"
+	}, {
+		"accessType": "WRITE",
+		"principalType": "ROLE",
+		"principalId": "admin",
+		"permission": "ALLOW",
+		"property": "find"
+	}, {
+		"accessType": "WRITE",
+		"principalType": "ROLE",
+		"principalId": "admin",
+		"permission": "ALLOW",
+		"property": "findById"
+	}, {
+		"accessType": "EXECUTE",
+		"principalType": "ROLE",
+		"principalId": "admin",
+		"permission": "ALLOW"
+	}, {
+		"accessType": "EXECUTE",
+		"principalType": "ROLE",
+		"principalId": "admin",
+		"permission": "ALLOW",
+		"property": "create"
+	}, {
+		"accessType": "EXECUTE",
+		"principalType": "ROLE",
+		"principalId": "admin",
+		"permission": "ALLOW",
+		"property": "find"
+	}, {
+		"accessType": "EXECUTE",
+		"principalType": "ROLE",
+		"principalId": "admin",
+		"permission": "ALLOW",
+		"property": "findById"
+	}, {
+		"accessType": "EXECUTE",
+		"principalType": "ROLE",
+		"principalId": "admin",
+		"permission": "ALLOW",
+		"property": "editProfile"
+	}, {
+		"accessType": "READ",
+		"principalType": "ROLE",
+		"principalId": "PodUser",
+		"permission": "ALLOW",
+		"property": "findOwnProfile"
+	}, {
+		"accessType": "READ",
+		"principalType": "ROLE",
+		"principalId": "Client",
+		"permission": "ALLOW",
+		"property": "findOwnProfile"
+	}, {
+		"accessType": "READ",
+		"principalType": "ROLE",
+		"principalId": "user",
+		"permission": "ALLOW",
+		"property": "findOwnProfile"
+	}],
+	"methods": {}
+}
