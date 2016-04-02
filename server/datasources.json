@@ -4,23 +4,23 @@
     "connector": "memory"
   },
   "mongoUserDs": {
-    "host": "127.0.0.1",
-    "port": "27017",
-    "database": "mongoUsersdb",
+    "host": "mongodb://<thasvmdcrw>:<thasvmdcrw2009>@ds021969.mlab.com",
+    "port": "21969",
+    "database": "mongods",
     "name": "mongoUserDs",
     "connector": "mongodb"
   },
   "mongoProfileDs": {
-    "host": "127.0.0.1",
-    "port": "27017",
-    "database": "mongoProfiledb",
+    "host": "mongodb://<thasvmdcrw>:<thasvmdcrw2009>@ds021969.mlab.com",
+    "port": "21969",
+    "database": "mongods",
     "name": "mongoProfilesDs",
     "connector": "mongodb"
   },
   "mongoDs": {
-    "host": "127.0.0.1",
-    "port": "27017",
-    "database": "mongoBookingdb",
+    "host": "mongodb://<thasvmdcrw>:<thasvmdcrw2009>@ds021969.mlab.com",
+    "port": "21969",
+    "database": "mongods",
     "name": "mongoDs",
     "connector": "mongodb"
   },
@@ -38,7 +38,7 @@
         },
         "auth": {
           "username": "matthewrathbone@hotmail.co.uk",
-          "password": "secretpassword"
+          "password": "password"
         }
       }
     ]
