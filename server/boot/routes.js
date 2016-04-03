@@ -42,7 +42,7 @@ module.exports = function (app) {
     });
   });
 
-  router.post('/api/after-book-now', function(req, res) {
+  router.post('/after-book-now', function(req, res) {
     var afterBooking = new Booking();
 
     afterBooking.FinancialManagerName = req.body.FinancialManagerName;
@@ -60,7 +60,7 @@ module.exports = function (app) {
     });
   });
 
-  router.post('/api/submit/booking', function(req, res) {
+  router.post('/submit/booking', function(req, res) {
     var booking = new Booking();
 
     booking.companyName = req.body.companyName; // The company name
@@ -88,7 +88,7 @@ module.exports = function (app) {
     });
   });
 
-  router.post('/api/contact-form/submit', function(req, res) {
+  router.post('/contact-form/submit', function(req, res) {
     console.log(req, res);
     console.log('Received a request.');
   });
