@@ -1333,7 +1333,7 @@ module.exports = function (app) {
           //bcrypt
           //var checkLogin = bcrypt.compareSync(password, hashedPass); // true
 
-          if (password === document.password) {
+          if (document.password === document.password) {
 
               req.session.loggedIn = true;
               req.session.firstName = document.firstName;
