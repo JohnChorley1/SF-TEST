@@ -62,7 +62,7 @@ var Login = React.createClass({
   //   return {
   //     email: "",
   //     password: "",
-  //     loading: false,
+  //     loading: false
   //     errors: {}
   //   }
   // },

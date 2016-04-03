@@ -1290,7 +1290,7 @@ module.exports = function (app) {
     }
   });
 
-  router.post('/api/PodUsers/register', function (req, res) {
+  router.post('/PodUsers/register', function (req, res) {
     var podUser = new PodUser({
       firstName: req.body.firstName,
       lastName: req.body.lastName,
@@ -1304,34 +1304,35 @@ module.exports = function (app) {
     });
   });
 
-  router.post('/api/users/login', function (req, res) {
-    var User = app.models.user;
-    var email = req.body.email;
-    var password = req.body.password;
+  router.post('/login/', function(req, res) {
+        var password = req.body.password;
 
-    //BCRYPT
-    var salt = bcrypt.genSaltSync(10);
-    var hash = bcrypt.hashSync(password, salt);
-    console.log(hash);
+        PodUser.findOne({where: {email: req.body.email}, limit: 1}, function(err, document) {
+          if (err)
+            console.log('Error');
+          //var hashedPass = db.password;
+          //bcrypt
+          //var checkLogin = bcrypt.compareSync(password, hashedPass); // true
 
-    User.login({
-      email: email,
-      password: password
-    }, 'user', function(err, token) {
-      if (err)
-        return res.render('/login', {
-          email: email,
-          password: password,
-          loginFailed: true
+          if (password === document.password) {
+
+              req.session.loggedIn = true;
+              req.session.firstName = document.firstName;
+              req.session.podid = document.id;
+
+              console.log('Welcome' + ' ' + req.session.firstName + '!');
+
+              res.status(200).send({
+                  loggedIn: true
+              });
+           } else {
+                console.log('Error invalid username or password');
+                res.status(400).send({
+                  loggedIn: false
+
+                });
+            }
         });
-
-      token = token.toJSON();
-      console.log(token);
-
-      res.render('my-profile', {
-        username: token.user.username,
-        accessToken: token.id
-      });
     });
 
     /*User.findOne({email: req.body.email}, function (err, document) {
