@@ -4,7 +4,7 @@
     "defaultForType": "mongodb",
     "connector": "loopback-connector-mongodb",
     "url": "mongodb://@ds015750.mlab.com",
-    "port": "15750",
+    "port": "27017",
     "database": "heroku_xbrxzppz",
     "username": "heroku_new",
     "password": "thasvmdcrw2009"
@@ -13,7 +13,7 @@
     "defaultForType": "mongodb",
     "connector": "loopback-connector-mongodb",
     "url": "mongodb://@ds015750.mlab.com",
-    "port": "15750",
+    "port": "27017",
     "database": "heroku_xbrxzppz",
     "username": "heroku_new",
     "password": "thasvmdcrw2009"
@@ -22,7 +22,7 @@
     "defaultForType": "mongodb",
     "connector": "loopback-connector-mongodb",
     "url": "mongodb://@ds015750.mlab.com",
-    "port": "15750",
+    "port": "27017",
     "database": "heroku_xbrxzppz",
     "username": "heroku_new",
     "password": "thasvmdcrw2009"
@@ -31,7 +31,7 @@
     "defaultForType": "mongodb",
     "connector": "loopback-connector-mongodb",
     "url": "mongodb://@ds015750.mlab.com",
-    "port": "15750",
+    "port": "27017",
     "database": "heroku_xbrxzppz",
     "username": "heroku_new",
     "password": "thasvmdcrw2009"
