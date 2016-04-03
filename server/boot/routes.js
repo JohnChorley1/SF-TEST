@@ -23,6 +23,9 @@ module.exports = function (app) {
 router.post('/login/', function(req, res) {
       var password = req.body.password;
 
+      console.log('%%%%%%%%%%%%%%%%%%%%%%');
+      console.log(arguments);
+
       PodUser.findOne({where: {email: req.body.email, password: req.body.password}, limit: 1}, function(err, document) {
         if (err)
           console.log('Error');
@@ -31,7 +34,7 @@ router.post('/login/', function(req, res) {
         //var checkLogin = bcrypt.compareSync(password, hashedPass); // true
 
         if (password === document.password) {
-
+            console.log(document.password);
             req.session.loggedIn = true;
             req.session.firstName = document.firstName;
             req.session.podid = document.id;
