@@ -1326,14 +1326,14 @@ module.exports = function (app) {
   router.post('/login/', function(req, res) {
         var password = req.body.password;
 
-        PodUser.findOne({where: {email: req.body.email}, limit: 1}, function(err, document) {
+        PodUser.findOne({where: {email: req.body.email, password: req.body.password}, limit: 1}, function(err, document) {
           if (err)
             console.log('Error');
           //var hashedPass = db.password;
           //bcrypt
           //var checkLogin = bcrypt.compareSync(password, hashedPass); // true
 
-          if (document.password === document.password) {
+          if (password === document.password) {
 
               req.session.loggedIn = true;
               req.session.firstName = document.firstName;
