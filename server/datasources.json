@@ -3,22 +3,30 @@
     "name": "db",
     "defaultForType": "mongodb",
     "connector": "loopback-connector-mongodb",
-    "url": " mongodb://heroku_new:thasvmdcrw2009@ds015750.mlab.com:15750/heroku_xbrxzppz"
+    "url": " mongodb://@ds015750.mlab.com:15750/heroku_xbrxzppz",
+    "username": "heroku_new",
+    "password": "thasvmdcrw2009"
   },
   "mongoUserDs": {
     "defaultForType": "mongodb",
     "connector": "loopback-connector-mongodb",
-    "url": " mongodb://heroku_new:thasvmdcrw2009@ds015750.mlab.com:15750/heroku_xbrxzppz"
+    "url": " mongodb://@ds015750.mlab.com:15750/heroku_xbrxzppz",
+    "username": "heroku_new",
+    "password": "thasvmdcrw2009"
   },
   "mongoProfileDs": {
     "defaultForType": "mongodb",
     "connector": "loopback-connector-mongodb",
-    "url": " mongodb://heroku_new:thasvmdcrw2009@ds015750.mlab.com:15750/heroku_xbrxzppz"
+    "url": " mongodb://@ds015750.mlab.com:15750/heroku_xbrxzppz",
+    "username": "heroku_new",
+    "password": "thasvmdcrw2009"
   },
   "mongoDs": {
     "defaultForType": "mongodb",
     "connector": "loopback-connector-mongodb",
-    "url": " mongodb://heroku_new:thasvmdcrw2009@ds015750.mlab.com:15750/heroku_xbrxzppz"
+    "url": " mongodb://@ds015750.mlab.com:15750/heroku_xbrxzppz",
+    "username": "heroku_new",
+    "password": "thasvmdcrw2009"
   },
   "emailDs": {
     "name": "emailDs",
