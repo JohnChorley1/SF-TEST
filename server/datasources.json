@@ -1,26 +1,29 @@
 {
   "db": {
     "name": "db",
-    "connector": "memory"
+    "host": "mongodb://<heroku_new>:<thasvmdcrw2009>@ds015750.mlab.com",
+    "port": "15750",
+    "database": "heroku_xbrxzppz",
+    "connector": "mongodb"
   },
   "mongoUserDs": {
-    "host": "mongodb://<thasvmdcrw>:<thasvmdcrw2009>@ds021969.mlab.com",
-    "port": "21969",
-    "database": "mongods",
+    "host": "mongodb://<heroku_new>:<thasvmdcrw2009>@ds015750.mlab.com",
+    "port": "15750",
+    "database": "heroku_xbrxzppz",
     "name": "mongoUserDs",
     "connector": "mongodb"
   },
   "mongoProfileDs": {
-    "host": "mongodb://<thasvmdcrw>:<thasvmdcrw2009>@ds021969.mlab.com",
-    "port": "21969",
-    "database": "mongods",
+    "host": "mongodb://<heroku_new>:<thasvmdcrw2009>@ds015750.mlab.com",
+    "port": "15750",
+    "database": "heroku_xbrxzppz",
     "name": "mongoProfilesDs",
     "connector": "mongodb"
   },
   "mongoDs": {
-    "host": "mongodb://<thasvmdcrw>:<thasvmdcrw2009>@ds021969.mlab.com",
-    "port": "21969",
-    "database": "mongods",
+    "host": "mongodb://<heroku_new>:<thasvmdcrw2009>@ds015750.mlab.com",
+    "port": "15750",
+    "database": "heroku_xbrxzppz",
     "name": "mongoDs",
     "connector": "mongodb"
   },
