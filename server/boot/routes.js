@@ -1348,7 +1348,6 @@ module.exports = function (app) {
         });
       }
     });*/
-  });
 
 
   router.get('/logout', function (req, res) {
