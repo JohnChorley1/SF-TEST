@@ -1,7 +1,7 @@
 {
   "db": {
     "name": "db",
-    "host": "mongodb://@ds015750.mlab.com",
+    "host": "@ds015750.mlab.com",
     "port": "15750",
     "database": "heroku_xbrxzppz",
     "username": "heroku_new",
@@ -9,7 +9,7 @@
     "connector": "mongodb"
   },
   "mongoUserDs": {
-    "host": "mongodb://@ds015750.mlab.com",
+    "host": "@ds015750.mlab.com",
     "port": "15750",
     "database": "heroku_xbrxzppz",
     "name": "mongoUserDs",
@@ -18,7 +18,7 @@
     "connector": "mongodb"
   },
   "mongoProfileDs": {
-    "host": "mongodb://@ds015750.mlab.com",
+    "host": "@ds015750.mlab.com",
     "port": "15750",
     "database": "heroku_xbrxzppz",
     "name": "mongoProfilesDs",
@@ -27,7 +27,7 @@
     "connector": "mongodb"
   },
   "mongoDs": {
-    "host": "mongodb://@ds015750.mlab.com",
+    "host": "@ds015750.mlab.com",
     "port": "15750",
     "database": "heroku_xbrxzppz",
     "name": "mongoDs",
