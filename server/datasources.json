@@ -1,39 +1,24 @@
 {
   "db": {
     "name": "db",
-    "host": "@ds015750.mlab.com",
-    "port": "15750",
-    "database": "heroku_xbrxzppz",
-    "username": "heroku_new",
-    "password": "thasvmdcrw2009",
-    "connector": "mongodb"
+    "defaultForType": "mongodb",
+    "connector": "loopback-connector-mongodb",
+    "url": " mongodb://heroku_new:thasvmdcrw2009@ds015750.mlab.com:15750/heroku_xbrxzppz"
   },
   "mongoUserDs": {
-    "host": "@ds015750.mlab.com",
-    "port": "15750",
-    "database": "heroku_xbrxzppz",
-    "name": "mongoUserDs",
-    "username": "heroku_new",
-    "password": "thasvmdcrw2009",
-    "connector": "mongodb"
+    "defaultForType": "mongodb",
+    "connector": "loopback-connector-mongodb",
+    "url": " mongodb://heroku_new:thasvmdcrw2009@ds015750.mlab.com:15750/heroku_xbrxzppz"
   },
   "mongoProfileDs": {
-    "host": "@ds015750.mlab.com",
-    "port": "15750",
-    "database": "heroku_xbrxzppz",
-    "name": "mongoProfilesDs",
-    "username": "heroku_new",
-    "password": "thasvmdcrw2009",
-    "connector": "mongodb"
+    "defaultForType": "mongodb",
+    "connector": "loopback-connector-mongodb",
+    "url": " mongodb://heroku_new:thasvmdcrw2009@ds015750.mlab.com:15750/heroku_xbrxzppz"
   },
   "mongoDs": {
-    "host": "@ds015750.mlab.com",
-    "port": "15750",
-    "database": "heroku_xbrxzppz",
-    "name": "mongoDs",
-    "username": "heroku_new",
-    "password": "thasvmdcrw2009",
-    "connector": "mongodb"
+    "defaultForType": "mongodb",
+    "connector": "loopback-connector-mongodb",
+    "url": " mongodb://heroku_new:thasvmdcrw2009@ds015750.mlab.com:15750/heroku_xbrxzppz"
   },
   "emailDs": {
     "name": "emailDs",
