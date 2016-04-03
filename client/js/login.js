@@ -24,14 +24,14 @@ var Content = React.createClass({
     else if (this.state.view === 'register') {
       return (
         <div id ='divContainer2'>
-        <Register handleClick={this.handleClick} url = '/register' />
+        <Register handleClick={this.handleClick} url = '/api/register' />
         </div>
       );
     }
     else if (this.state.view === 'login') {
       return (
         <div id ='divContainer2'>
-        <Login handleClick={this.handleClick} url = '/login/'/>
+        <Login handleClick={this.handleClick} url = '/api/users'/>
         </div>
       );
     }
