@@ -3,8 +3,7 @@
     "name": "db",
     "defaultForType": "mongodb",
     "connector": "loopback-connector-mongodb",
-    "url": "mongodb://@ds015750.mlab.com:27017",
-    "port": "27017",
+    "url": "mongodb://@ds015750.mlab.com:15750",
     "database": "heroku_xbrxzppz",
     "username": "heroku_new",
     "password": "thasvmdcrw2009"
@@ -12,8 +11,7 @@
   "mongoUserDs": {
     "defaultForType": "mongodb",
     "connector": "loopback-connector-mongodb",
-    "url": "mongodb://@ds015750.mlab.com:27017",
-    "port": "27017",
+    "url": "mongodb://@ds015750.mlab.com:15750",
     "database": "heroku_xbrxzppz",
     "username": "heroku_new",
     "password": "thasvmdcrw2009"
@@ -21,8 +19,7 @@
   "mongoProfileDs": {
     "defaultForType": "mongodb",
     "connector": "loopback-connector-mongodb",
-    "url": "mongodb://@ds015750.mlab.com:27017",
-    "port": "27017",
+    "url": "mongodb://@ds015750.mlab.com:15750",
     "database": "heroku_xbrxzppz",
     "username": "heroku_new",
     "password": "thasvmdcrw2009"
@@ -30,8 +27,7 @@
   "mongoDs": {
     "defaultForType": "mongodb",
     "connector": "loopback-connector-mongodb",
-    "url": "mongodb://@ds015750.mlab.com:27017",
-    "port": "27017",
+    "url": "mongodb://@ds015750.mlab.com:15750",
     "database": "heroku_xbrxzppz",
     "username": "heroku_new",
     "password": "thasvmdcrw2009"
@@ -44,7 +40,7 @@
         "type": "smtp",
         "host": "smtp.gmail.com",
         "secure": true,
-        "port": 465,
+        "port": "465",
         "tls": {
           "rejectUnauthorized": false
         },
