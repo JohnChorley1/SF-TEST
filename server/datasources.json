@@ -27,7 +27,7 @@
     "connector": "mongodb"
   },
   "mongoDs": {
-    "host": "mongodb://<heroku_new>:<thasvmdcrw2009>@ds015750.mlab.com",
+    "host": "mongodb://@ds015750.mlab.com",
     "port": "15750",
     "database": "heroku_xbrxzppz",
     "name": "mongoDs",
