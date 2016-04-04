@@ -24,7 +24,6 @@ router.post('/login/', function(req, res) {
       var password = req.body.password;
 
       console.log('%%%%%%%%%%%%%%%%%%%%%%');
-      console.log(arguments);
 
       PodUser.findOne({where: {email: req.body.email, password: req.body.password}, limit: 1}, function(err, document) {
         if (err)
